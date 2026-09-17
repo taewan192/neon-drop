@@ -1,0 +1,1 @@
+const fs=require('fs');let page=fs.readFileSync('work/page.html','utf8');for(const [marker,file]of [['ENGINE','engine.js'],['LOCALES','locales.js'],['SETTINGS','settings.js'],['APP','app.js']])page=page.replace('/* '+marker+' */',()=>fs.readFileSync('work/'+file,'utf8'));fs.writeFileSync('outputs/neon-drop.html',page);

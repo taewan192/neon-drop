@@ -1,0 +1,18 @@
+# Android and Gradle build products
+work/android/.gradle/
+work/android/**/build/
+work/android/local.properties
+
+# Private Android signing material
+work/signing/
+outputs/neon-drop-signing-backup.zip
+*.jks
+*.keystore
+signing.json
+
+# Local editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+work/privacy-site/

@@ -1,0 +1,3 @@
+const fs=require('fs');let app=fs.readFileSync('work/app.js','utf8');
+app=app.replace("$('sound').onclick=()=>{sound=!sound;$('sound').textContent=sound?'소리 켜짐':'소리 꺼짐';$('sound').setAttribute('aria-pressed',String(sound));beep();};", "$('sound').onclick=()=>{sound=!sound;syncSound();try{localStorage.setItem('neon-drop-sound',sound?'on':'off');}catch{}if(!sound){for(const o of activeTones){try{o.stop();}catch{}}}else beep(660);};");
+fs.writeFileSync('work/app.js',app);fs.writeFileSync('outputs/neon-drop.html',fs.readFileSync('work/page.html','utf8').replace('/* ENGINE */',()=>fs.readFileSync('work/engine.js','utf8')).replace('/* APP */',()=>app));
