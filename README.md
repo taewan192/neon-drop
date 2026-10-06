@@ -11,8 +11,8 @@ Open `outputs/neon-drop.html` in a modern browser. The game is self-contained an
 - Package: `com.arcana.neondrop`
 - Minimum Android version: Android 8.0 (API 26)
 - Target SDK: 36
-- Latest release: version 1.0.6, version code 7
-- Latest Google Play bundle: `outputs/neon-drop-com.arcana.neondrop-1.0.6.aab`
+- Latest release: version 1.0.7, version code 8
+- Latest Google Play bundle: `outputs/neon-drop-com.arcana.neondrop-1.0.7.aab`
 
 Android source is under `work/android`. The upload key and signing passwords are intentionally excluded from this repository.
 
